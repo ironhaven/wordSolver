@@ -43,5 +43,5 @@ if __name__ == '__main__':
     print('Search wordlist for word')
     input_chars = input('Word: ')
     perms = get_permutations_recurse2(input_chars, len(input_chars))
-    for i in filter(lambda x: x in word_list, perms):
+    for i in valdate_words(perms):
         print(i)
